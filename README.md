@@ -41,6 +41,14 @@ outputs = tf.keras.layers.Dense(1)(x)
 model = tf.keras.Model(inputs, outputs)
 ```
 
+## Binary CrossEntropy and model training ##
+
+```
+model.compile(optimizer='adam', loss=tf.keras.losses.BinaryCrossentropy(from_logits=True),
+		metrics=tf.keras.metrics.BinaryAccuracy())
+model.fit(train_data_gen, epochs=10, validation_data=test_data_gen)
+```
+
 ## References ##
 
 1. https://stackoverflow.com/questions/74725957/indexerror-tuple-index-out-of-range-for-tensorflow-machine-learning-code
