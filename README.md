@@ -25,6 +25,22 @@ test_data_gen = test_image_generator.flow_from_directory(batch_size=BATCH_SIZE,
 	seed=seed_2,)
 ```
 
+## Medical perceptions result model ##
+
+```
+base_model = tf.keras.applications.Xception( weights='imagenet', 
+			input_shape=(IMG_WIDTH, IMG_HEIGHT, IMG_CHANNELS), include_top=False)  
+base_model.trainable = False
+inputs = tf.keras.Input(shape=(IMG_WIDTH, IMG_HEIGHT, IMG_CHANNELS))
+
+x = tf.keras.applications.xception.preprocess_input(inputs)
+x = base_model(x, training=False)
+x = tf.keras.layers.GlobalAveragePooling2D()(x)
+x = tf.keras.layers.Dropout(0.2)(x)  
+outputs = tf.keras.layers.Dense(1)(x)
+model = tf.keras.Model(inputs, outputs)
+```
+
 ## References ##
 
 1. https://stackoverflow.com/questions/74725957/indexerror-tuple-index-out-of-range-for-tensorflow-machine-learning-code
