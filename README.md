@@ -47,6 +47,8 @@ def custom_image_preprocess( image ):
 
 ## Medical perceptions result model ##
 
+The same inputs and process even model but one has results and another one cannot, they have reasons.
+
 ```
 base_model = tf.keras.applications.Xception( weights='imagenet', 
 			input_shape=(IMG_WIDTH, IMG_HEIGHT, IMG_CHANNELS), include_top=False)  
