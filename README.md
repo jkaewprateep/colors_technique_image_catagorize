@@ -65,11 +65,15 @@ model = tf.keras.Model(inputs, outputs)
 
 ## Binary CrossEntropy and model training ##
 
+Simple compile and training with Binary class support for loss function and optimizers in the model training process.
+
 ```
 model.compile(optimizer='adam', loss=tf.keras.losses.BinaryCrossentropy(from_logits=True),
 		metrics=tf.keras.metrics.BinaryAccuracy())
 model.fit(train_data_gen, epochs=10, validation_data=test_data_gen)
 ```
+
+## Files and Directory ##
 
 | File name | Description |
 --- | --- |
