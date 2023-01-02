@@ -71,6 +71,15 @@ model.compile(optimizer='adam', loss=tf.keras.losses.BinaryCrossentropy(from_log
 model.fit(train_data_gen, epochs=10, validation_data=test_data_gen)
 ```
 
+| File name | Description |
+--- | --- |
+| sample.py | sample codes |
+| mildDem1.jpg | Mild Determinated example |
+| moderateDem39.jpg | Moderate Determinated example |
+| nonDem40.jpg | None Moderate Determinated example |
+| verymildDem63.jpg | Very Mild Determinated example |
+| README.md | readme file |
+
 ## References ##
 
 1. https://stackoverflow.com/questions/74725957/indexerror-tuple-index-out-of-range-for-tensorflow-machine-learning-code
