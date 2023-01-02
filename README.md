@@ -3,6 +3,8 @@ For the study of color technique, image categorize, and binary image categorizes
 
 ## DataSet ##
 
+The Image Generator is a sequential create of input for large image training with custom function support, you can select the target directory and image decode transform by its defaults.
+
 ```
 train_image_generator = ImageDataGenerator(rescale=1. / 255, vertical_flip=True, horizontal_flip=True, 
                 preprocessing_function=custom_image_preprocess,) 
@@ -26,6 +28,8 @@ test_data_gen = test_image_generator.flow_from_directory(batch_size=BATCH_SIZE,
 ```
 
 ## Custom Function ##
+
+The custom function to create random rotation as the questioner ask, it is not supported to rotate picture but for training, a process must have reasons to support it. One is rotating image is small and we do not notice with simple degrees that humans make mistakes.
 
 ```
 def custom_image_preprocess( image ):
@@ -69,6 +73,7 @@ model.fit(train_data_gen, epochs=10, validation_data=test_data_gen)
 
 1. https://stackoverflow.com/questions/74725957/indexerror-tuple-index-out-of-range-for-tensorflow-machine-learning-code
 2. https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images?resource=download
+3. https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator
 
 
 ## Training DATA ##
