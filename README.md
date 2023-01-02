@@ -9,4 +9,9 @@ For study color technique image catagorize, binary image catagorize.
 
 ## Training DATA ##
 
-![MildDemented](https://github.com/jkaewprateep/colors_technique_image_catagorize/blob/main/mildDem1.jpg "MildDemented")
+![MildDemented](https://github.com/jkaewprateep/colors_technique_image_catagorize/blob/main/mildDem1.jpg "MildDemented") ![MildDemented](https://github.com/jkaewprateep/colors_technique_image_catagorize/blob/main/nonDem40.jpg "MildDemented") ![MildDemented](
+https://github.com/jkaewprateep/colors_technique_image_catagorize/blob/main/moderateDem39.jpg "MildDemented") ![MildDemented](
+https://github.com/jkaewprateep/colors_technique_image_catagorize/blob/main/verymildDem63.jpg "MildDemented")
+
+
+
