@@ -25,6 +25,22 @@ test_data_gen = test_image_generator.flow_from_directory(batch_size=BATCH_SIZE,
 	seed=seed_2,)
 ```
 
+## Custom Function ##
+
+```
+def custom_image_preprocess( image ):
+
+    random_lotation_layer = tf.keras.layers.RandomRotation(
+        factor=(-0.2, 0.3),
+        fill_mode='nearest',
+        interpolation='nearest',
+        seed=None,
+        fill_value=0.0,
+    )
+	
+    return random_lotation_layer(image)
+```
+
 ## Medical perceptions result model ##
 
 ```
