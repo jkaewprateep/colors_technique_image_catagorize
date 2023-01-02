@@ -1,5 +1,5 @@
 # colors_technique_image_catagorize
-For study color technique image catagorize, binary image catagorize.
+For the study of color technique, image categorize, and binary image categorizes, in traditional medical treatments fundamentals and services are best efforts by medical resources and processes. The instruments and tools working on the accuracy results, the binary cross entropy is reserved for the task that is not because it looks old but best efforts with tools model builders and research awareness of this to selected Binary CrossEntrophy.
 
 ## DataSet ##
 
